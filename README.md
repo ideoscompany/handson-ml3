@@ -82,6 +82,3 @@ See [INSTALL.md](INSTALL.md)
 
 ## Contributors
 I would like to thank everyone [who contributed to this project](https://github.com/ageron/handson-ml3/graphs/contributors), either by providing useful feedback, filing issues or submitting Pull Requests. Special thanks go to Haesun Park and Ian Beauregard who reviewed every notebook and submitted many PRs, including help on some of the exercise solutions. Thanks as well to Steven Bunkley and Ziembla who created the `docker` directory, and to github user SuperYorio who helped on some exercise solutions. Thanks a lot to Victor Khaustov who submitted plenty of excellent PRs, fixing many errors. And lastly, thanks to Google ML Developer Programs team who supported this work by providing Google Cloud Credit.
-
-==========================
-docker run --gpus all --rm -it   -p 8889:8888   -v "$PWD:$PWD" -w "$PWD"   -u $(id -u):$(id -g)   -e HOME="$PWD"   -e JUPYTER_RUNTIME_DIR="$PWD/.jlab/runtime"   -e JUPYTER_CONFIG_DIR="$PWD/.jlab/config"   -e JUPYTER_DATA_DIR="$PWD/.jlab/data"   --shm-size=2g   nvcr.io/nvidia/tensorflow:25.01-tf2-py3   jupyter lab --ip=0.0.0.0 --no-browser --ServerApp.token=''

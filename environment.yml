@@ -1,7 +1,6 @@
 name: homl3
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - box2d-py=2.3  # used only in chapter 18, exercise 8
   - ffmpeg=6.1  # used only in the matplotlib tutorial to generate animations
@@ -40,6 +39,6 @@ dependencies:
     - tensorflow~=2.14.0  # Deep Learning library
     - transformers~=4.35.0  # Natural Language Processing lib for TF or PyTorch
     - urlextract~=1.8.0  # optionally used in chapter 3, exercise 4
-    - gymnasium[classic_control,atari,accept-rom-license]  # used only in ch18
+    - gymnasium[classic_control,atari]  # used only in ch18
     - google-cloud-aiplatform~=1.36.2  # used only in chapter 19
     - google-cloud-storage~=2.13.0  # used only in chapter 19
